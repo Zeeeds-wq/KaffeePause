@@ -203,10 +203,8 @@ Func DoIt()
 			$MousePos = MouseGetPos()
 			GUICtrlSetData($KPState, "1")
 			MouseWheel("down", 1)
-			If $RC = True Then
-				Sleep(GUICtrlRead($RCInputX))
-;~ 				MouseMove($MousePos[0], $MousePos[1] + GUICtrlRead($RCInputY), 5)
-				MouseMove($MousePos[0], $MousePos[1], GUICtrlRead($RCInputY))
+			If $RC = True Then				
+;~ 				NOT IMPLEMENTED!
 			EndIf
 		Else
 			AudibleBeep()
